@@ -1,0 +1,125 @@
+.services-section {
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--color-text-main), var(--color-primary-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 24h Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.service-card {
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 132, 199, 0.1);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+}
+
+.service-icon.red-glow {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+  background: var(--color-primary);
+  color: white;
+}
+
+.service-card:hover .service-icon.red-glow {
+  background: #ef4444;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* Specialties Grid */
+.specialties-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.specialty-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+.specialty-pill:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+}
+
+.pill-icon {
+  display: flex;
+  color: var(--color-primary);
+}
+
+.specialty-pill:hover .pill-icon {
+  color: white;
+}
+
+.pill-text {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
